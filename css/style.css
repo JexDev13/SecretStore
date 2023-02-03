@@ -1,0 +1,27 @@
+/*MARGENES Y PANTALLA*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*ESTE ES EL FORMATO PARA AJUSTARSE CON LA PANTALLA*/
+}
+
+.slider {
+
+    width: 1664px;
+    height: 1024px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider img.active {
+    opacity: 1;
+}
