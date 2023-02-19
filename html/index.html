@@ -1,86 +1,249 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" 0 content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-sacle=1.0">
-    <title>Awesome Secret Store</title>
-    <!--Link a los estilos de la pagina-->
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-COMPRAS</title>
+    <!-- Link a CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--Logo en buscador-->
-    <link rel="shortcut icon" href="../img/imagen referencial.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/iconPag.jpg" type="image/x-icon">
 </head>
 
 <body>
+
+    <!--Header-->
     <header>
-        <!--Encabezado de la pagina-->
-        <a href="" target="_blank" class="logo">Secret Store</a>
-        <nav>
-            <ul>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="compra.html">Comprar</a></li>
-                <li><a href="#sec1">Contactos</a></li>
-            </ul>
-        </nav>
+        <!--Nov-->
+        <div class="nav container">
+            <a href="../html/easteregg.html" class="logo">SecretStore</a>
+            <!--Productos-->
+            <a href="#sec1" class="inicio-link">Inicio</a>
+            <!--Productos-->
+            <a href="#sec2" class="products-link">Productos</a>
+            <!--Contactos-->
+            <a href="#sec3" class="contact-link">Contactos</a>
+            <!--Cart Icon-->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">Tu carrito de Compras</h2>
+                <!--Content-->
+                <div class="cart-content">
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!--Boton Compras-->
+                <button type="button" class="btn">
+                    <span class="btn__content">Comprar Ahora_</span>
+                    <span class="btn__glitch"></span>
+                    <span class="btn__label">r25</span>
+                </button>
+                <!--Cerrar compras-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
     </header>
 
-    <h2>Productos destacados</h2>
-
-    <div class="slider">
-        <img src="../img/imagen referencial.png" alt="Tecnologia y Computo"
-            data-description="Producto 1: Descripcion del producto" class="active">
-        <img src="../img/compuElefante.png" alt="Tecnologia y Computo"
-            data-description="LaptopGamer para elefante con ryzen 8, 16gb de ram y 64 descargable y rtx1080GB">
-        <img src="../img/imagen referencial.png" alt="Servicios"
-            data-description="Producto 3: Descripcion del producto">
-        <img src="../img/imagen referencial 2.png" alt="Servicios"
-            data-description="Producto 4: Descripcion del producto">
-        <img src="../img/cueva.jpg" alt="Secretos" 
-            data-description="Bitacora oficial de la cueva de los Tayos + datos ocultos del gobierno">
-        <img src="../img/cherno.webp" alt="Secretos"
-            data-description="Registros de la URSS usando a Chernobyl como una pantalla(NO HUBO SUPERBVIVIENTES)">
-        <img src="../img/virusCovid.jpg" alt="Malware" 
-            data-description="Peligrosa variante del cyber-covid19(cc19) transmisible a humanos">
-        <img src="../img/imagen referencial 2.png" alt="Malware"
-            data-description="Producto 8: Descripcion del producto">
-        <img src="../img/imagen referencial.png" alt="Sustancias de poder"
-            data-description="Producto 9: Descripcion del producto">
-        <img src="../img/imagen referencial 2.png" alt="Sustancias de poder"
-            data-description="Producto 10: Descripcion del producto">
-    </div>
-
-    <div class="description"></div>
-
-    <div>
-        <a href=""><input type="button" value="Comprar"></a>
-    </div>
-
-    <div>
-        <input type="button" value="Anterior" id="prev">
-        <input type="button" value="Siguiente" id="next">
-    </div>
-
+    <!--SECCION 1: Productos destacados-->
     <section id="sec1">
-        <!--COntactos-->
-        <h3>Contactos</h3>
-        <div class="box1">
-            <h4>Sr.A</h4>
+        <div class="slider">
+            <img src="https://i.gifer.com/origin/06/06ff4700028aa8d487f1de4ea5b0b806.gif" alt="GIF 1" class="active" />
+            <img src="https://media.tenor.com/kZgnS46xYJwAAAAC/phone-old-phone.gif" alt="GIF 2" />
+            <img src="https://media.tenor.com/yzmhO-MSXy8AAAAC/centurion-tank-tank.gif" alt="GIF 3" />
+            <img src="https://media.tenor.com/dvRiREkVG7wAAAAC/drama-requim-for-a-dream.gif" alt="GIF 4" />
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjg1MGMzOWJlYjc3M2Q0YTAzMTc0ZTZhM2UyZTA1MmJlZDE4Y2MzMiZjdD1n/l3mZdnvjDhaPI9N8Q/giphy.gif"
+                alt="GIF 5" />
+            <img src="https://37.media.tumblr.com/95323216621a5da926fd7d60372e3fc2/tumblr_n9gqjoAMBB1qz732no1_r1_500.gif"
+                alt="GIF 6" />
+            <img src="https://media.tenor.com/-SV9TjUGabMAAAAC/hacker-python.gif" alt="GIF 7" />
+            <img src="https://media.indiedb.com/images/games/1/72/71147/backrooms_glitch_gif.2.gif" alt="GIF 8" />
+            <div class="dot-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class=prev id="btn2">&#10094;</div>
+            <div class=next id="btn2">&#10095;</div>
         </div>
 
-        <div class="box2">
-            <h4>Sr.T</h4>
+        <div class="titulo">
+            <h1 class="titu">Thuraya XT-PRO</h1>
         </div>
 
-        <div class="box3">
-            <h4>Sr.J</h4>
+        <div class="mas">
+            <button type="button" id="btn3">
+                <a href="#sec2" class="btn__content">Ver Mas_</a>
+                <span class="btn__glitch"></span>
+                <span class="btn__label">r25</span>
+            </button>
         </div>
+
     </section>
 
+    <!--SECCION 2: Todos los prodcutos-->
+    <!--<section class="shop container" id="sec2">-->
+    <section id="sec2">
+        <h2 class="section-title">Shop Products</h2>
+        <!--Content-->
+        <div class="shop-content">
+            <!--BOX1-->
+            <div class="product-box"
+                onmouseover="document.getElementById('descripcion1').innerHTML = 'Teléfono satelital a prueba de agua y con una autonomía de hasta 10 horas.'"
+                onmouseout="document.getElementById('descripcion1').innerHTML = ''">
+                <div class="product-info">
+                    <img src="../img/thuraya-xt-pro.jpg" alt="" class="product-img">
+                    <h2 class="product-title">THURAYA XT -PRO</h2>
+                    <span class="price">$1000</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <div class="product-descripcion" id="descripcion1"></div>
+            </div>
+            <!--BOX2-->
+            <div class="product-box"
+                onmouseover="document.getElementById('descripcion2').innerHTML = 'Utiliza el teléfono inteligente para convertirse en un teléfono satelital.'"
+                onmouseout="document.getElementById('descripcion2').innerHTML = ''">
+                <div class="product-info">
+                    <img src="../img/thuraya-satsleeve-.jpg" alt="" class="product-img">
+                    <h2 class="product-title">THURAYA SATSLEEVE+</h2>
+                    <span class="price">$950</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <div class="product-descripcion" id="descripcion2"></div>
+            </div>
+            <!--BOX3-->
+            <div class="product-box"
+                onmouseover="document.getElementById('descripcion3').innerHTML = 'Vehículo de recuperación blindado de la Fuerza Terrestre de los Estados Unidos.'"
+                onmouseout="document.getElementById('descripcion3').innerHTML = ''">
+                <div class="product-info">
+                    <img src="../img/M88 Armored Recovery Vehicle.jpg" alt="" class="product-img">
+                    <h2 class="product-title">M88 Armored Recovery Vehicle</h2>
+                    <span class="price">$400000</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <div class="product-descripcion" id="descripcion3"></div>
+            </div>
+            <!--BOX4-->
+            <div class="product-box"
+                onmouseover="document.getElementById('descripcion4').innerHTML = 'Una droga síquica altamente potente que produce alucinaciones y cambios en la percepción.'"
+                onmouseout="document.getElementById('descripcion4').innerHTML = ''">
+                <div class="product-info">
+                    <img src="../img/LSD.jpg" alt="" class="product-img">
+                    <h2 class="product-title">LSD</h2>
+                    <span class="price">$100</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <div class="product-descripcion" id="descripcion4"></div>
+            </div>
+            <!--BOX5-->
+            <div class="product-box"
+                onmouseover="document.getElementById('descripcion5').innerHTML = 'Una cueva localizada en la Amazonia Ecuatoriana que fue el tema de una búsqueda arqueológica desde la década de 1970.'"
+                onmouseout="document.getElementById('descripcion5').innerHTML = ''">
+                <div class="product-info">
+                    <img src="../img/CUEVA DE LOS TAYOS SECRET.jpg" alt="" class="product-img">
+                    <h2 class="product-title">CUEVA DE LOS TAYOS SECRET</h2>
+                    <span class="price">$2500</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <div class="product-descripcion" id="descripcion5"></div>
+            </div>
+            <!--BOX6-->
+            <div class="product-box"
+                onmouseover="document.getElementById('descripcion6').innerHTML = 'Acceso a archivos secretos del Pentágono que contienen información confidencial.'"
+                onmouseout="document.getElementById('descripcion6').innerHTML = ''">
+                <div class="product-info">
+                    <img src="../img/Pentagono Secretos.jpg" alt="" class="product-img">
+                    <h2 class="product-title">SECRETOS DEL GOBIERNO </h2>
+                    <span class="price">$100000</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <div class="product-descripcion" id="descripcion6"></div>
+            </div>
+            <!--BOX7-->
+            <div class="product-box"
+                onmouseover="document.getElementById('descripcion7').innerHTML = 'Servicios de hacking y piratería informática.'"
+                onmouseout="document.getElementById('descripcion7').innerHTML = ''">
+                <div class="product-info">
+                    <img src="../img/Servicios de Hackeo.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Servicios de Hackeo</h2>
+                    <span class="price">$150</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <div class="product-descripcion" id="descripcion7"></div>
+            </div>
+            <!--BOX8-->
+            <div class="product-box"
+                onmouseover="document.getElementById('descripcion8').innerHTML = 'Servicios de asesinato, secuestro y otros crímenes ilegales.'"
+                onmouseout="document.getElementById('descripcion8').innerHTML = ''">
+                <div class="product-info">
+                    <img src="../img/Servicios de Crimenes.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Servicios de Crimenes</h2>
+                    <span class="price">$500</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <div class="product-descripcion" id="descripcion8"></div>
+            </div>
+        </div>
+        <!--Contenedor con click-->
+        <div class="container-pop">
+            <div class="modal">
+                <img class="modal-img" src="" alt="">
+                <h5 class="modal-title"></h5>
+                <p class="modal-desc"></p>
+                <p class="modal-price"></p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                <span class="prevP">&#10094;</span>
+                <span class="nextP">&#10095;</span>
+                <div class="dots"></div>
+                <span class="close">&times;</span>
+            </div>
+        </div>
 
-    <!--Link a las funciones de la pagina -->
+    </section>
+
+    <!--SECCION 3: Contactos-->
+    <section id="sec3">
+
+        <div class="container-con">
+            <h3 class="neonText">
+                404
+            </h3>
+            <h4 class="neonText">Page Not Found</h4>
+
+            <div class="image-container">
+                <h6>Desarrolladores</h6>
+                <figure>
+                    <img src="https://i.pinimg.com/originals/2b/8e/ff/2b8eff9334dee04d03c1f4a39d509f6b.jpg" alt="Image 1">
+                    <figcaption>PHLXIX</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d55a400b-26fb-4559-b794-092dfea99296/df8jgai-0aa07d23-036d-4f58-b896-799b17470647.jpg/v1/fill/w_736,h_736,q_75,strp/mad_boy_and_cute_boy_by_sarahjacqut23_df8jgai-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzM2IiwicGF0aCI6IlwvZlwvZDU1YTQwMGItMjZmYi00NTU5LWI3OTQtMDkyZGZlYTk5Mjk2XC9kZjhqZ2FpLTBhYTA3ZDIzLTAzNmQtNGY1OC1iODk2LTc5OWIxNzQ3MDY0Ny5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.oiqeP-nKZrG2nFCOi3bci1CSz1JYpecaQCBoPqMPWxU" alt="Image 2">
+                    <figcaption>D3VJ</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.pinimg.com/236x/de/54/23/de5423747c99f1aa495641b1d134acd4.jpg" alt="Image 3">
+                    <figcaption>BRA</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!--LINK a JS-->
     <script src="../js/script.js"></script>
-
 </body>
 
 </html>

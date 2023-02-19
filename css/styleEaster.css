@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*ESTE ES EL FORMATO PARA AJUSTARSE CON LA PANTALLA*/
+}
+
+body
+{
+    background-image: url("../img/fondo_easter.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p1 {
+    /*ESTE ES UN EJEMPLO DE COMO CONFIGURE MIS LETRAS
+    COMO LA HAGAN USETEDES DEPENDERA DE SUS NECESIDADES 
+    Y CREATIVIDAD*/
+    align-items: center;
+    font-size: 80px;
+    font-family: fantasy;
+    color: #ffffff;
+    text-shadow: 4px 5px #5e2727;
+    white-space: nowrap;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p2 {
+    /*ESTE ES UN EJEMPLO DE COMO CONFIGURE MIS LETRAS
+    COMO LA HAGAN USETEDES DEPENDERA DE SUS NECESIDADES 
+    Y CREATIVIDAD*/
+    align-items: center;
+    font-size: 60px;
+    font-family: 'Times New Roman';
+    color: #ffffff;
+    text-shadow: 4px 5px #5e2727;
+    white-space: nowrap;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p3 {
+    /*ESTE ES UN EJEMPLO DE COMO CONFIGURE MIS LETRAS
+    COMO LA HAGAN USETEDES DEPENDERA DE SUS NECESIDADES 
+    Y CREATIVIDAD*/
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    color: #ffffff;
+    text-shadow: 4px 5px #5e2727;
+    white-space: nowrap;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
